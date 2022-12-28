@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>postPetTestCase</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad1ec452-6663-411d-9f93-575e4e44d990</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>db8b19be-0981-48e5-8e6d-2440e936321e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>9223372036854621000</defaultValue>
+      <description></description>
+      <id>db8b19be-0981-48e5-8e6d-2440e936321e</id>
+      <masked>false</masked>
+      <name>id_pet</name>
+   </variable>
+</TestCaseEntity>

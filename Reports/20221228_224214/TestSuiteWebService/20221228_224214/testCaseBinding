@@ -1,0 +1,6 @@
+{"testCaseName":"Test Cases/positiveCase/postPetTestCase","testCaseId":"Test Cases/positiveCase/postPetTestCase","iterationVariableName":""}
+{"testCaseName":"Test Cases/positiveCase/getPetTestCase","testCaseId":"Test Cases/positiveCase/getPetTestCase","iterationVariableName":""}
+{"testCaseName":"Test Cases/positiveCase/delTestCase","testCaseId":"Test Cases/positiveCase/delTestCase","iterationVariableName":""}
+{"testCaseName":"Test Cases/negativeTestCase/postNegativeTC","testCaseId":"Test Cases/negativeTestCase/postNegativeTC","iterationVariableName":""}
+{"testCaseName":"Test Cases/negativeTestCase/getNegativeTC","testCaseId":"Test Cases/negativeTestCase/getNegativeTC","iterationVariableName":""}
+{"testCaseName":"Test Cases/negativeTestCase/delNegativeTC","testCaseId":"Test Cases/negativeTestCase/delNegativeTC","iterationVariableName":""}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuiteWebService" time="16.889" tests="6" failures="0" errors="0">
+   <testsuite name="TestSuiteWebService" tests="6" failures="0" errors="0" time="16.889" skipped="0" timestamp="2022-12-28 22:42:36" hostname="nurulazzahra - 192.168.1.4" id="Test Suites/TestSuiteWebService">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/nurulazzahra/Katalon Studio/SV_TestWebService_NurulAzzahra/Reports/20221228_224214/TestSuiteWebService/20221228_224214"/>
+         <property name="logFiles" value="/Users/nurulazzahra/Katalon Studio/SV_TestWebService_NurulAzzahra/Reports/20221228_224214/TestSuiteWebService/20221228_224214/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="nurulazzahra - 192.168.1.4"/>
+         <property name="hostAddress" value="192.168.1.4"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.5.5.208"/>
+      </properties>
+      <testcase name="Test Cases/positiveCase/postPetTestCase" time="9.113" classname="Test Cases/positiveCase/postPetTestCase" status="PASSED">
+         <system-out><![CDATA[2022-12-28 22:42:36 - [TEST_CASE][PASSED] - Test Cases/positiveCase/postPetTestCase: Test Cases/positiveCase/postPetTestCase
+
+2022-12-28 22:42:37 - [TEST_STEP][PASSED] - idpet = 9223372036854621000: null
+
+2022-12-28 22:42:37 - [TEST_STEP][PASSED] - nama = "test12345": null
+
+2022-12-28 22:42:37 - [TEST_STEP][PASSED] - send = sendRequestAndVerify(findTestObject("petAPI/postPet", ["id":idpet, "name":nama])): Send request and verify the response successfully
+
+2022-12-28 22:42:45 - [MESSAGE][INFO] - HAR: /Users/nurulazzahra/Katalon Studio/SV_TestWebService_NurulAzzahra/Reports/20221228_224214/TestSuiteWebService/20221228_224214/requests/main/0.har
+
+2022-12-28 22:42:45 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2022-12-28 22:42:45 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2022-12-28 22:42:45 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2022-12-28 22:42:45 - [MESSAGE][PASSED] - Verify response successfully
+
+2022-12-28 22:42:45 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2022-12-28 22:42:45 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2022-12-28 22:42:45 - [TEST_STEP][PASSED] - comment(send.getResponseBodyContent()): {"id":9223372036854621000,"category":{"id":0,"name":"string"},"name":"test12345","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+2022-12-28 22:42:45 - [MESSAGE][INFO] - {"id":9223372036854621000,"category":{"id":0,"name":"string"},"name":"test12345","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+2022-12-28 22:42:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(send, 200): Verify response status code successfully
+
+2022-12-28 22:42:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-28 22:42:45 - [TEST_STEP][PASSED] - responseID = getElementPropertyValue(send, "id"): null
+
+2022-12-28 22:42:45 - [TEST_STEP][PASSED] - println(responseID): null
+
+2022-12-28 22:42:45 - [TEST_STEP][PASSED] - verifName = verifyMatch("test12345", "test12345", false): Actual text 'test12345' and expected text 'test12345' are matched 
+
+2022-12-28 22:42:45 - [MESSAGE][PASSED] - Actual text 'test12345' and expected text 'test12345' are matched 
+
+2022-12-28 22:42:45 - [TEST_STEP][PASSED] - responseName = getElementPropertyValue(send, "name"): null
+
+2022-12-28 22:42:45 - [TEST_STEP][PASSED] - println(responseName): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/positiveCase/getPetTestCase" time="1.811" classname="Test Cases/positiveCase/getPetTestCase" status="PASSED">
+         <system-out><![CDATA[2022-12-28 22:42:45 - [TEST_CASE][PASSED] - Test Cases/positiveCase/getPetTestCase: Test Cases/positiveCase/getPetTestCase
+
+2022-12-28 22:42:46 - [TEST_STEP][PASSED] - id_pet = 9223372036854621000: null
+
+2022-12-28 22:42:46 - [TEST_STEP][PASSED] - name = "test12345": null
+
+2022-12-28 22:42:46 - [TEST_STEP][PASSED] - sendGet = sendRequest(findTestObject("petAPI/getPet", ["id":id_pet, "name":name])): Send request successfully
+
+2022-12-28 22:42:47 - [MESSAGE][INFO] - HAR: /Users/nurulazzahra/Katalon Studio/SV_TestWebService_NurulAzzahra/Reports/20221228_224214/TestSuiteWebService/20221228_224214/requests/main/1.har
+
+2022-12-28 22:42:47 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-28 22:42:47 - [TEST_STEP][PASSED] - comment(sendGet.getResponseBodyContent()): {"id":9223372036854621000,"category":{"id":0,"name":"string"},"name":"test12345","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+2022-12-28 22:42:47 - [MESSAGE][INFO] - {"id":9223372036854621000,"category":{"id":0,"name":"string"},"name":"test12345","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+2022-12-28 22:42:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(sendGet, 200): Verify response status code successfully
+
+2022-12-28 22:42:47 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-28 22:42:47 - [TEST_STEP][PASSED] - responseID2 = getElementPropertyValue(sendGet, "id"): null
+
+2022-12-28 22:42:47 - [TEST_STEP][PASSED] - println(responseID2): null
+
+2022-12-28 22:42:47 - [TEST_STEP][PASSED] - responseName2 = getElementPropertyValue(sendGet, "name"): null
+
+2022-12-28 22:42:47 - [TEST_STEP][PASSED] - println(responseName2): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/positiveCase/delTestCase" time="1.476" classname="Test Cases/positiveCase/delTestCase" status="PASSED">
+         <system-out><![CDATA[2022-12-28 22:42:47 - [TEST_CASE][PASSED] - Test Cases/positiveCase/delTestCase: Test Cases/positiveCase/delTestCase
+
+2022-12-28 22:42:47 - [TEST_STEP][PASSED] - id_pet = 9223372036854621000: null
+
+2022-12-28 22:42:47 - [TEST_STEP][PASSED] - name = "test12345": null
+
+2022-12-28 22:42:47 - [TEST_STEP][PASSED] - sendDel = sendRequest(findTestObject("petAPI/delPet", ["id":id_pet, "name":name])): Send request successfully
+
+2022-12-28 22:42:49 - [MESSAGE][INFO] - HAR: /Users/nurulazzahra/Katalon Studio/SV_TestWebService_NurulAzzahra/Reports/20221228_224214/TestSuiteWebService/20221228_224214/requests/main/2.har
+
+2022-12-28 22:42:49 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-28 22:42:49 - [TEST_STEP][PASSED] - verifyResponseStatusCode(sendDel, 200): Verify response status code successfully
+
+2022-12-28 22:42:49 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/negativeTestCase/postNegativeTC" time="1.374" classname="Test Cases/negativeTestCase/postNegativeTC" status="PASSED">
+         <system-out><![CDATA[2022-12-28 22:42:49 - [TEST_CASE][PASSED] - Test Cases/negativeTestCase/postNegativeTC: Test Cases/negativeTestCase/postNegativeTC
+
+2022-12-28 22:42:49 - [TEST_STEP][PASSED] - sendPostNeg = sendRequest(findTestObject("petAPI/postPet", ["id_pet":"0909090909", "name":1234567])): Send request successfully
+
+2022-12-28 22:42:50 - [MESSAGE][INFO] - HAR: /Users/nurulazzahra/Katalon Studio/SV_TestWebService_NurulAzzahra/Reports/20221228_224214/TestSuiteWebService/20221228_224214/requests/main/3.har
+
+2022-12-28 22:42:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-28 22:42:50 - [TEST_STEP][PASSED] - comment(sendPostNeg.getResponseBodyContent()): {"code":400,"type":"unknown","message":"bad input"}
+
+2022-12-28 22:42:50 - [MESSAGE][INFO] - {"code":400,"type":"unknown","message":"bad input"}
+
+2022-12-28 22:42:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(sendPostNeg, 400): Verify response status code successfully
+
+2022-12-28 22:42:50 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/negativeTestCase/getNegativeTC" time="1.303" classname="Test Cases/negativeTestCase/getNegativeTC" status="PASSED">
+         <system-out><![CDATA[2022-12-28 22:42:50 - [TEST_CASE][PASSED] - Test Cases/negativeTestCase/getNegativeTC: Test Cases/negativeTestCase/getNegativeTC
+
+2022-12-28 22:42:50 - [TEST_STEP][PASSED] - sendGetNeg = sendRequest(findTestObject("petAPI/getPet", ["id":"0909090909"])): Send request successfully
+
+2022-12-28 22:42:51 - [MESSAGE][INFO] - HAR: /Users/nurulazzahra/Katalon Studio/SV_TestWebService_NurulAzzahra/Reports/20221228_224214/TestSuiteWebService/20221228_224214/requests/main/4.har
+
+2022-12-28 22:42:51 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-28 22:42:51 - [TEST_STEP][PASSED] - comment(sendGetNeg.getResponseBodyContent()): {"code":1,"type":"error","message":"Pet not found"}
+
+2022-12-28 22:42:51 - [MESSAGE][INFO] - {"code":1,"type":"error","message":"Pet not found"}
+
+2022-12-28 22:42:51 - [TEST_STEP][PASSED] - verifyResponseStatusCode(sendGetNeg, 404): Verify response status code successfully
+
+2022-12-28 22:42:51 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/negativeTestCase/delNegativeTC" time="1.356" classname="Test Cases/negativeTestCase/delNegativeTC" status="PASSED">
+         <system-out><![CDATA[2022-12-28 22:42:52 - [TEST_CASE][PASSED] - Test Cases/negativeTestCase/delNegativeTC: Test Cases/negativeTestCase/delNegativeTC
+
+2022-12-28 22:42:52 - [TEST_STEP][PASSED] - sendDelNeg = sendRequest(findTestObject("petAPI/delPet", ["id":"09090909"])): Send request successfully
+
+2022-12-28 22:42:53 - [MESSAGE][INFO] - HAR: /Users/nurulazzahra/Katalon Studio/SV_TestWebService_NurulAzzahra/Reports/20221228_224214/TestSuiteWebService/20221228_224214/requests/main/5.har
+
+2022-12-28 22:42:53 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-28 22:42:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(sendDelNeg, 404): Verify response status code successfully
+
+2022-12-28 22:42:53 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-12-28 22:42:36 - [TEST_SUITE][PASSED] - TestSuiteWebService: Test Cases/negativeTestCase/delNegativeTC]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

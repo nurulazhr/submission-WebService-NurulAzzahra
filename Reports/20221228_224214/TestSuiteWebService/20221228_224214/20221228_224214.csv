@@ -1,0 +1,45 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TestSuiteWebService,,,,2022-12-28 22:42:36,2022-12-28 22:42:53,16.889s,PASSED
+,,,,,,,
+Test Cases/positiveCase/postPetTestCase,,,,2022-12-28 22:42:36,2022-12-28 22:42:45,9.113s,PASSED
+idpet = 9223372036854621000,,,,2022-12-28 22:42:37,2022-12-28 22:42:37,0.002s,PASSED
+"nama = ""test12345""",,,,2022-12-28 22:42:37,2022-12-28 22:42:37,0.002s,PASSED
+"send = sendRequestAndVerify(findTestObject(""petAPI/postPet"", [""id"":idpet, ""name"":nama]))",,,,2022-12-28 22:42:37,2022-12-28 22:42:45,8.498s,PASSED
+comment(send.getResponseBodyContent()),,,,2022-12-28 22:42:45,2022-12-28 22:42:45,0.031s,PASSED
+"verifyResponseStatusCode(send, 200)",,Verifikasi Respon Status Code,,2022-12-28 22:42:45,2022-12-28 22:42:45,0.024s,PASSED
+"responseID = getElementPropertyValue(send, ""id"")",,Verifikasi Input ID Pet,,2022-12-28 22:42:45,2022-12-28 22:42:45,0.059s,PASSED
+println(responseID),,,,2022-12-28 22:42:45,2022-12-28 22:42:45,0.004s,PASSED
+"verifName = verifyMatch(""test12345"", ""test12345"", false)",,Verifikasi Input Nama,,2022-12-28 22:42:45,2022-12-28 22:42:45,0.023s,PASSED
+"responseName = getElementPropertyValue(send, ""name"")",,,,2022-12-28 22:42:45,2022-12-28 22:42:45,0.032s,PASSED
+println(responseName),,,,2022-12-28 22:42:45,2022-12-28 22:42:45,0.000s,PASSED
+,,,,,,,
+Test Cases/positiveCase/getPetTestCase,,,,2022-12-28 22:42:45,2022-12-28 22:42:47,1.811s,PASSED
+id_pet = 9223372036854621000,,,,2022-12-28 22:42:46,2022-12-28 22:42:46,0.003s,PASSED
+"name = ""test12345""",,,,2022-12-28 22:42:46,2022-12-28 22:42:46,0.000s,PASSED
+"sendGet = sendRequest(findTestObject(""petAPI/getPet"", [""id"":id_pet, ""name"":name]))",,,,2022-12-28 22:42:46,2022-12-28 22:42:47,1.461s,PASSED
+comment(sendGet.getResponseBodyContent()),,,,2022-12-28 22:42:47,2022-12-28 22:42:47,0.007s,PASSED
+"verifyResponseStatusCode(sendGet, 200)",,Verifikasi Respon Status Code,,2022-12-28 22:42:47,2022-12-28 22:42:47,0.005s,PASSED
+"responseID2 = getElementPropertyValue(sendGet, ""id"")",,Verifikasi Get ID Pet,,2022-12-28 22:42:47,2022-12-28 22:42:47,0.036s,PASSED
+println(responseID2),,,,2022-12-28 22:42:47,2022-12-28 22:42:47,0.001s,PASSED
+"responseName2 = getElementPropertyValue(sendGet, ""name"")",,Verifikasi Get Nama,,2022-12-28 22:42:47,2022-12-28 22:42:47,0.013s,PASSED
+println(responseName2),,,,2022-12-28 22:42:47,2022-12-28 22:42:47,0.001s,PASSED
+,,,,,,,
+Test Cases/positiveCase/delTestCase,,,,2022-12-28 22:42:47,2022-12-28 22:42:49,1.476s,PASSED
+id_pet = 9223372036854621000,,,,2022-12-28 22:42:47,2022-12-28 22:42:47,0.002s,PASSED
+"name = ""test12345""",,,,2022-12-28 22:42:47,2022-12-28 22:42:47,0.000s,PASSED
+"sendDel = sendRequest(findTestObject(""petAPI/delPet"", [""id"":id_pet, ""name"":name]))",,,,2022-12-28 22:42:47,2022-12-28 22:42:49,1.280s,PASSED
+"verifyResponseStatusCode(sendDel, 200)",,Verifikasi Respon Status Code,,2022-12-28 22:42:49,2022-12-28 22:42:49,0.013s,PASSED
+,,,,,,,
+Test Cases/negativeTestCase/postNegativeTC,,,,2022-12-28 22:42:49,2022-12-28 22:42:50,1.374s,PASSED
+"sendPostNeg = sendRequest(findTestObject(""petAPI/postPet"", [""id_pet"":""0909090909"", ""name"":1234567]))",,,,2022-12-28 22:42:49,2022-12-28 22:42:50,1.176s,PASSED
+comment(sendPostNeg.getResponseBodyContent()),,,,2022-12-28 22:42:50,2022-12-28 22:42:50,0.003s,PASSED
+"verifyResponseStatusCode(sendPostNeg, 400)",,Verifikasi Respon Status Code,,2022-12-28 22:42:50,2022-12-28 22:42:50,0.004s,PASSED
+,,,,,,,
+Test Cases/negativeTestCase/getNegativeTC,,,,2022-12-28 22:42:50,2022-12-28 22:42:51,1.303s,PASSED
+"sendGetNeg = sendRequest(findTestObject(""petAPI/getPet"", [""id"":""0909090909""]))",,,,2022-12-28 22:42:50,2022-12-28 22:42:51,1.139s,PASSED
+comment(sendGetNeg.getResponseBodyContent()),,,,2022-12-28 22:42:51,2022-12-28 22:42:51,0.005s,PASSED
+"verifyResponseStatusCode(sendGetNeg, 404)",,Verifikasi Respon Status Code,,2022-12-28 22:42:51,2022-12-28 22:42:51,0.002s,PASSED
+,,,,,,,
+Test Cases/negativeTestCase/delNegativeTC,,,,2022-12-28 22:42:52,2022-12-28 22:42:53,1.356s,PASSED
+"sendDelNeg = sendRequest(findTestObject(""petAPI/delPet"", [""id"":""09090909""]))",,,,2022-12-28 22:42:52,2022-12-28 22:42:53,1.173s,PASSED
+"verifyResponseStatusCode(sendDelNeg, 404)",,Verifikasi Respon Status Code,,2022-12-28 22:42:53,2022-12-28 22:42:53,0.005s,PASSED
